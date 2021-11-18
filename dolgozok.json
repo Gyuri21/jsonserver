@@ -1,18 +1,6 @@
 {
   "employees": [
     {
-      "id": 1,
-      "fullname": "Nagy János",
-      "city": "Szolnok",
-      "salary": 8400000
-    },
-    {
-      "fullname": "Páros Lajos1",
-      "city": "Szeged",
-      "salary": "3430000",
-      "id": 2
-    },
-    {
       "id": 3,
       "fullname": "Aranyos Enikő",
       "city": "Szolnok",

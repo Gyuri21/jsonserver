@@ -117,8 +117,8 @@ function getEmpoyee(){
                 li.innerHTML= employees.id+ ".) ";
                 li.innerHTML+= employees.fullname;
                 list.appendChild(li);
-                list.appendChild(delButton);
-                addEventToButtons(delButton);
+                li.appendChild(delButton);
+                addEventToButtons(delButton,li);
             });   
         })
         .catch(error => console.log(error))
@@ -137,9 +137,10 @@ function getEmpoyee(){
         .catch(error => console.log(error))
     }
 
-    function addEventToButtons(button){
+    function addEventToButtons(button,li){
         button.addEventListener('click', event => {
             console.log('Törlésre ítélve' + event.target.dataset.id);
             deleteEmpoyee(event.target.dataset.id);
+            li.parentNode.removeChild(li);
         })
     }
